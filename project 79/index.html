@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Pizzeria</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="#HOME">Home</a>
+            <a href="#view menu">VIEW MENU</a>
+            <a href="#edit menu" >EDIT MENU</a>
+            <h1 style="text-align: center;">My restaurent menu</h1>
+
+        </div>
+        
+        <div id="menu_text"></div>
+        <button onclick="show()">show menu</button>
+        <h5>add stuff to menu:</h5>
+
+        <input type="text" id="menu_add">
+        <button onclick="add()">Add</button>
+        <script>
+            menu_items_array =[
+                "pizza", "chickenpizza", "Veggie pizza" , "tandorri panner pizza"
+            ];
+            function show(){
+                document.getElementById("menu_text").innerHTML = menu_items_array;
+
+            }
+            function add(){
+                menu_add = document.getElementsById("menu_add").value;
+                menu_text.push(menu_add);
+                menu_text.sort();
+                document.getElementById("menu_text").innerHTML = menu_text;
+
+            }
+        </script>
+
+    </body>
+</html>

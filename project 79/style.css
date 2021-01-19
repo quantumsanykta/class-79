@@ -1,0 +1,33 @@
+body
+{
+	margin:0px;
+   background-image: https://i.dlpng.com/static/png/6366696_preview.png;
+}
+ .topnav
+ {
+	 overflow:hidden;
+	 
+	 background-color: black;
+	 position: static;
+	
+ }
+.topnav a.active
+{
+	background-color: brown;
+	color: whitesmoke;
+}
+.topnav a
+{
+	float: left;
+	color:whitesmoke;
+	text-align: center;
+	padding: 14px  16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+.topnav a:hover
+{
+	background-color: gold;
+	color:whitesmoke ;
+}
+
